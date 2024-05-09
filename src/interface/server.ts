@@ -4,12 +4,12 @@ import cors from 'cors';
 
 export class App {
   private readonly app: Express;
-  private readonly port: number;
+  private readonly port: string;
   constructor() {
     this.app = express();
     this.app.use(express.json());
     this.app.use('/api', router)
-    this.port = 8000;
+    this.port = process.env.PORT ?? '8000';
     this.app.use(cors({
       methods: ['GET'],
   }));
