@@ -1,0 +1,422 @@
+[
+  {
+    "name": "Café Latte",
+    "description": "Una mezcla suave de café espresso y leche caliente, coronada con una capa de espuma de leche.",
+    "recipe": "1 shot de espresso + leche caliente + espuma de leche.",
+    "id": "9143f711-ff95-41ce-8abf-5ecee4db7240"
+  },
+  {
+    "name": "Cappuccino",
+    "description": "Una mezcla equilibrada de café espresso, leche vaporizada y espuma de leche, servida en una taza de tamaño pequeño.",
+    "recipe": "1 shot de espresso + leche vaporizada + espuma de leche.",
+    "id": "11c2e392-0ff0-49f9-8290-e798866974c8"
+  },
+  {
+    "name": "Espresso",
+    "description": "Una pequeña cantidad de café muy concentrado y fuerte, servido en una taza pequeña.",
+    "recipe": "1 shot de espresso (30 ml aproximadamente).",
+    "id": "7adeaad6-859f-4a15-8ff5-dd0b4b451988"
+  },
+  {
+    "name": "Americano",
+    "description": "Una taza de café espresso diluido con agua caliente, resultando en una bebida más suave que el espresso.",
+    "recipe": "1 shot de espresso + agua caliente.",
+    "id": "cce87764-b496-4cf9-ab6a-5a5c7fc3c412"
+  },
+  {
+    "name": "Mocha",
+    "description": "Una deliciosa combinación de café espresso, chocolate y leche, con una capa de crema batida en la parte superior.",
+    "recipe": "1 shot de espresso + jarabe de chocolate + leche vaporizada + crema batida.",
+    "id": "f5901f06-7773-4201-8f85-607e9e5abffc"
+  },
+  {
+    "name": "Affogato",
+    "description": "Una indulgente combinación de café espresso y helado de vainilla, perfecta para los amantes del dulce y el café.",
+    "recipe": "1 shot de espresso + bola de helado de vainilla.",
+    "id": "f8a6443f-98f8-48cf-8a2a-7259e426ebc5"
+  },
+  {
+    "name": "Flat White",
+    "description": "Un café con leche similar al latte, pero con menos espuma y una proporción de café más alta.",
+    "recipe": "1 shot de espresso + leche caliente + una fina capa de espuma de leche.",
+    "id": "3aed7436-5ff8-4713-96d5-968b24692ab6"
+  },
+  {
+    "name": "Irish Coffee",
+    "description": "Una mezcla reconfortante de café caliente, whisky irlandés, azúcar y crema batida, perfecta para calentar el cuerpo en días fríos.",
+    "recipe": "1 shot de espresso + whisky irlandés + azúcar + crema batida.",
+    "id": "6739dd27-ccd9-48cf-b0d2-0584b8498279"
+  },
+  {
+    "name": "Macchiato",
+    "description": "Un café espresso 'manchado' con una pequeña cantidad de leche vaporizada o espuma de leche, para agregar suavidad y textura.",
+    "recipe": "1 shot de espresso + una pizca de leche vaporizada o espuma de leche.",
+    "id": "c4cadcb2-8e7d-464c-85ed-c4258f95e44c"
+  },
+  {
+    "name": "Café con Leche",
+    "description": "Una combinación simple y reconfortante de café espresso y leche caliente, perfecta para empezar el día.",
+    "recipe": "1 shot de espresso + leche caliente.",
+    "id": "255abb35-a107-4509-b5ff-f7734eea9ba7"
+  },
+  {
+    "name": "Ristretto",
+    "description": "Un espresso más corto y concentrado que el tradicional, con un sabor más intenso y menos amargo.",
+    "recipe": "Menos agua que un espresso tradicional, resultando en una cantidad más pequeña de bebida.",
+    "id": "665210ce-3a0d-4606-b1c0-11d061ea01e3"
+  },
+  {
+    "name": "Café Turco",
+    "description": "Una forma tradicional de preparar café donde los granos de café se hierven con agua y azúcar en un recipiente especial llamado 'cezve'.",
+    "recipe": "Gran cantidad de café molido + agua + azúcar, hervidos juntos en un cezve.",
+    "id": "5e25981c-1f29-4b3e-9487-4b5798ed6882"
+  },
+  {
+    "name": "Café Vienés",
+    "description": "Un café espresso servido con crema batida y cacao espolvoreado por encima, perfecto para los amantes del chocolate.",
+    "recipe": "1 shot de espresso + crema batida + cacao en polvo.",
+    "id": "2dc9d0f8-11bd-4905-931f-2776935e98fe"
+  },
+  {
+    "name": "Café Helado",
+    "description": "Una refrescante bebida de café servida sobre hielo, perfecta para los días calurosos.",
+    "recipe": "Café espresso enfriado + hielo.",
+    "id": "20a5f2e8-4767-42f9-af0f-8c139d5ce8d8"
+  },
+  {
+    "name": "Café con Amaretto",
+    "description": "Una variante del café irlandés, pero en lugar de whisky, se agrega licor de amaretto para un sabor dulce y almendrado.",
+    "recipe": "1 shot de espresso + licor de amaretto + azúcar + crema batida.",
+    "id": "3694753d-afab-4117-a3a3-630889c03afe"
+  },
+  {
+    "name": "Café de Olla",
+    "description": "Una bebida tradicional mexicana donde el café se hierve con piloncillo (azúcar moreno), canela y clavo.",
+    "recipe": "Café molido + agua + piloncillo + canela + clavo, hervidos juntos.",
+    "id": "bc64abcc-ed3a-464d-bc80-8ed5d35efee1"
+  },
+  {
+    "name": "Café con Miel",
+    "description": "Una variante dulce de café donde se agrega miel en lugar de azúcar para endulzar la bebida.",
+    "recipe": "1 shot de espresso + miel + leche (opcional).",
+    "id": "af7640fa-eaea-4ac5-853b-778bbdc38cd7"
+  },
+  {
+    "name": "Café con Nata",
+    "description": "Una indulgente versión de café donde se agrega nata o crema espesa en lugar de leche para un sabor rico y cremoso.",
+    "recipe": "1 shot de espresso + nata o crema espesa.",
+    "id": "b3ff83aa-0df1-4216-89cc-40f70cbb8c3e"
+  },
+  {
+    "name": "Café con Especias",
+    "description": "Una variante aromática de café donde se agregan especias como canela, cardamomo o nuez moscada para un sabor único.",
+    "recipe": "1 shot de espresso + especias al gusto (canela, cardamomo, nuez moscada, etc.).",
+    "id": "0b99cdf9-ca96-4b0a-ab66-63f47af4c243"
+  },
+  {
+    "name": "Café con Licor de Avellana",
+    "description": "Una deliciosa combinación de café espresso con un toque de licor de avellana para un sabor suave y aromático.",
+    "recipe": "1 shot de espresso + licor de avellana.",
+    "id": "5643c0b3-7eac-4d65-babe-740966303d92"
+  },
+  {
+    "name": "Café con Caramelo",
+    "description": "Una variante dulce de café donde se agrega jarabe de caramelo para un sabor rico y indulgente.",
+    "recipe": "1 shot de espresso + jarabe de caramelo + leche.",
+    "id": "6cd2bff9-48dc-4db2-af45-cdcdfe4958a0"
+  },
+  {
+    "name": "Café con Cardamomo",
+    "description": "Una variante aromática de café donde se agrega cardamomo molido para un sabor especiado y exótico.",
+    "recipe": "1 shot de espresso + cardamomo molido.",
+    "id": "a1ab410e-35fc-4467-b65e-8302715727a8"
+  },
+  {
+    "name": "Café con Coco",
+    "description": "Una variante tropical de café donde se agrega leche de coco para un sabor refrescante y exótico.",
+    "recipe": "1 shot de espresso + leche de coco + coco rallado (opcional).",
+    "id": "9bbaa009-6b9a-4598-b946-5c2845f6fc7c"
+  },
+  {
+    "name": "Café con Vainilla",
+    "description": "Una variante dulce de café donde se agrega extracto de vainilla para un sabor suave y aromático.",
+    "recipe": "1 shot de espresso + extracto de vainilla + leche.",
+    "id": "f88c05ae-fb82-4ddb-a83c-1a189cbd77ea"
+  },
+  {
+    "name": "Café con Almendras",
+    "description": "Una variante deliciosa de café donde se agrega leche de almendras para un sabor suave y a nuez.",
+    "recipe": "1 shot de espresso + leche de almendras.",
+    "id": "df331ed3-724c-471d-9354-5b1ce194dc79"
+  },
+  {
+    "name": "Café con Chocolate Blanco",
+    "description": "Una variante indulgente de café donde se agrega chocolate blanco derretido para un sabor dulce y cremoso.",
+    "recipe": "1 shot de espresso + chocolate blanco derretido + leche.",
+    "id": "42f2e993-7a0c-453f-81df-0ca4f0953aee"
+  },
+  {
+    "name": "Café con Canela",
+    "description": "Una variante aromática de café donde se agrega canela molida para un sabor especiado y reconfortante.",
+    "recipe": "1 shot de espresso + canela molida + leche.",
+    "id": "911f8ad7-71c6-4e47-bb48-06b9f79e97b3"
+  },
+  {
+    "name": "Café con Chocolate Caliente",
+    "description": "Una combinación reconfortante de café espresso y chocolate caliente para los amantes del dulce y el café.",
+    "recipe": "1 shot de espresso + chocolate caliente + leche.",
+    "id": "cdc1ad72-a226-42eb-b83e-e30eae87c340"
+  },
+  {
+    "name": "Café con Esencia de Naranja",
+    "description": "Una variante aromática de café donde se agrega esencia de naranja para un sabor cítrico y refrescante.",
+    "recipe": "1 shot de espresso + esencia de naranja + leche.",
+    "id": "7891b46a-8d2a-4970-b7c6-b830c820af10"
+  },
+  {
+    "name": "Café con Crema de Cacao",
+    "description": "Una variante indulgente de café donde se agrega crema de cacao para un sabor suave y chocolateado.",
+    "recipe": "1 shot de espresso + crema de cacao + leche.",
+    "id": "b392eb36-a8ad-4cec-bee0-c48458cf6dab"
+  },
+  {
+    "name": "Café con Canela y Miel",
+    "description": "Una combinación aromática y dulce de café donde se agrega canela y miel para un sabor reconfortante.",
+    "recipe": "1 shot de espresso + canela molida + miel + leche.",
+    "id": "8bb1f475-2d67-4083-85f8-afa4a28b2015"
+  },
+  {
+    "name": "Café con Leche Condensada",
+    "description": "Una variante dulce y cremosa de café donde se agrega leche condensada para un sabor rico y reconfortante.",
+    "recipe": "1 shot de espresso + leche condensada + leche.",
+    "id": "603e250f-6448-4704-b1d3-f6c7e3e90260"
+  },
+  {
+    "name": "Café con Hielo y Amaretto",
+    "description": "Una variante refrescante de café donde se sirve sobre hielo con un toque de licor de amaretto.",
+    "recipe": "Café espresso enfriado + hielo + licor de amaretto.",
+    "id": "b854b354-f2e1-46d0-ae29-1ffbc49a1fb2"
+  },
+  {
+    "name": "Café con Menta",
+    "description": "Una variante refrescante de café donde se agrega sirope de menta para un sabor fresco y aromático.",
+    "recipe": "1 shot de espresso + sirope de menta + leche.",
+    "id": "36fbfc03-f711-4933-a94d-8a099468cb81"
+  },
+  {
+    "name": "Café con Kahlúa",
+    "description": "Una variante indulgente de café donde se agrega licor de Kahlúa para un sabor suave y a café.",
+    "recipe": "1 shot de espresso + licor de Kahlúa + leche.",
+    "id": "8679755e-90ba-4aee-bb1c-8dd5bff790a8"
+  },
+  {
+    "name": "Café con Canela y Leche Condensada",
+    "description": "Una variante dulce y aromática de café donde se agrega canela y leche condensada para un sabor rico y reconfortante.",
+    "recipe": "1 shot de espresso + canela molida + leche condensada + leche.",
+    "id": "d80094a3-8aa1-4d34-af31-d2906a3891cc"
+  },
+  {
+    "name": "Café con Ron",
+    "description": "Una variante alcohólica de café donde se agrega ron para un sabor intenso y cálido.",
+    "recipe": "1 shot de espresso + ron + leche.",
+    "id": "85c50770-d05f-450b-8c1a-4ad8f5ad04e7"
+  },
+  {
+    "name": "Café con Leche de Avena",
+    "description": "Una variante vegana de café donde se utiliza leche de avena en lugar de leche de vaca.",
+    "recipe": "1 shot de espresso + leche de avena.",
+    "id": "3806bdbe-21b4-437b-b608-af1ddae3b924"
+  },
+  {
+    "name": "Café con Sirope de Arce",
+    "description": "Una variante dulce de café donde se agrega sirope de arce para un sabor suave y afrutado.",
+    "recipe": "1 shot de espresso + sirope de arce + leche.",
+    "id": "16495dc4-45bc-450a-8c99-0a0c98c70bbc"
+  },
+  {
+    "name": "Café con Canela y Nuez Moscada",
+    "description": "Una combinación aromática de café donde se agrega canela y nuez moscada para un sabor reconfortante y cálido.",
+    "recipe": "1 shot de espresso + canela molida + nuez moscada molida + leche.",
+    "id": "4db9be6a-8ff0-4abd-95a3-309754b68cff"
+  },
+  {
+    "name": "Café con Leche de Almendras",
+    "description": "Una variante vegana de café donde se utiliza leche de almendras en lugar de leche de vaca.",
+    "recipe": "1 shot de espresso + leche de almendras.",
+    "id": "3e8a5f98-d7df-433e-9222-4039a158ec9f"
+  },
+  {
+    "name": "Café con Sirope de Avellana",
+    "description": "Una variante aromática de café donde se agrega sirope de avellana para un sabor suave y a nuez.",
+    "recipe": "1 shot de espresso + sirope de avellana + leche.",
+    "id": "739aa23b-73eb-4386-84b1-400d582f3317"
+  },
+  {
+    "name": "Café con Crema Batida y Canela",
+    "description": "Una variante indulgente de café donde se agrega crema batida y canela para un sabor rico y reconfortante.",
+    "recipe": "1 shot de espresso + crema batida + canela molida + leche.",
+    "id": "c21598f5-b848-4325-8b09-d72e0aae72e8"
+  },
+  {
+    "name": "Café con Chocolate y Malvaviscos",
+    "description": "Una variante dulce y reconfortante de café donde se agrega chocolate caliente y malvaviscos para un sabor indulgente.",
+    "recipe": "1 shot de espresso + chocolate caliente + malvaviscos + leche.",
+    "id": "20f92cbb-e2d9-4038-844a-15229ed6bf45"
+  },
+  {
+    "name": "Café con Leche de Soja",
+    "description": "Una variante vegana de café donde se utiliza leche de soja en lugar de leche de vaca.",
+    "recipe": "1 shot de espresso + leche de soja.",
+    "id": "c41845bc-8c5e-4437-97bb-f1526ee269cf"
+  },
+  {
+    "name": "Café con Esencia de Almendra",
+    "description": "Una variante aromática de café donde se agrega esencia de almendra para un sabor suave y a nuez.",
+    "recipe": "1 shot de espresso + esencia de almendra + leche.",
+    "id": "95ec6025-672d-43dc-852a-36a62e862481"
+  },
+  {
+    "name": "Café con Crema de Coco",
+    "description": "Una variante tropical de café donde se agrega crema de coco para un sabor rico y exótico.",
+    "recipe": "1 shot de espresso + crema de coco + leche.",
+    "id": "6d353e2b-f09e-46e8-9d3d-c285d3705f5a"
+  },
+  {
+    "name": "Café con Canela y Leche de Almendras",
+    "description": "Una combinación aromática y vegana de café donde se agrega canela y leche de almendras para un sabor suave y reconfortante.",
+    "recipe": "1 shot de espresso + canela molida + leche de almendras.",
+    "id": "1067da07-6723-4575-88aa-86d57e289403"
+  },
+  {
+    "name": "Café con Miel y Canela",
+    "description": "Una combinación dulce y aromática de café donde se agrega miel y canela para un sabor reconfortante y cálido.",
+    "recipe": "1 shot de espresso + miel + canela molida + leche.",
+    "id": "585fdc93-8823-4baf-b210-bb4a4ca81dcf"
+  },
+  {
+    "name": "Café con Sirope de Vainilla",
+    "description": "Una variante dulce y aromática de café donde se agrega sirope de vainilla para un sabor suave y reconfortante.",
+    "recipe": "1 shot de espresso + sirope de vainilla + leche.",
+    "id": "33572223-d49c-4264-ab7d-821232dc3fb8"
+  },
+  {
+    "name": "Café con Sirope de Caramelo",
+    "description": "Una variante dulce de café donde se agrega sirope de caramelo para un sabor rico y reconfortante.",
+    "recipe": "1 shot de espresso + sirope de caramelo + leche.",
+    "id": "0623a6c2-63d6-474a-8e5c-40eb6833f834"
+  },
+  {
+    "name": "Café con Sirope de Chocolate",
+    "description": "Una variante indulgente de café donde se agrega sirope de chocolate para un sabor rico y chocolateado.",
+    "recipe": "1 shot de espresso + sirope de chocolate + leche.",
+    "id": "dc24b953-abd0-4fe4-b4e9-0551944ca843"
+  },
+  {
+    "name": "Café con Sirope de Menta",
+    "description": "Una variante refrescante de café donde se agrega sirope de menta para un sabor fresco y aromático.",
+    "recipe": "1 shot de espresso + sirope de menta + leche.",
+    "id": "41dbc40b-edf0-4988-a27e-f567c0266365"
+  },
+  {
+    "name": "Café con Nuez Moscada",
+    "description": "Una variante aromática de café donde se agrega nuez moscada molida para un sabor cálido y reconfortante.",
+    "recipe": "1 shot de espresso + nuez moscada molida + leche.",
+    "id": "90cecdaa-bfa1-474f-8d11-5b2a18407b30"
+  },
+  {
+    "name": "Café con Licor de Café",
+    "description": "Una variante indulgente de café donde se agrega licor de café para un sabor intenso y a café.",
+    "recipe": "1 shot de espresso + licor de café + leche.",
+    "id": "b491962a-7681-408e-85a2-89614e1cbb00"
+  },
+  {
+    "name": "Café con Leche de Coco",
+    "description": "Una variante tropical de café donde se utiliza leche de coco en lugar de leche de vaca.",
+    "recipe": "1 shot de espresso + leche de coco.",
+    "id": "a38d38b0-40b4-4408-9a69-cd1abf275e7f"
+  },
+  {
+    "name": "Café con Miel y Leche de Almendras",
+    "description": "Una combinación dulce y vegana de café donde se agrega miel y leche de almendras para un sabor suave y reconfortante.",
+    "recipe": "1 shot de espresso + miel + leche de almendras.",
+    "id": "94e9f74b-352c-4bf5-9495-628b229b930e"
+  },
+  {
+    "name": "Café con Sirope de Avellana y Caramelo",
+    "description": "Una variante dulce y aromática de café donde se agrega sirope de avellana y caramelo para un sabor rico y reconfortante.",
+    "recipe": "1 shot de espresso + sirope de avellana + sirope de caramelo + leche.",
+    "id": "a738a96e-5771-4b2a-972d-a2c93bce76a1"
+  },
+  {
+    "name": "Café con Nata y Canela",
+    "description": "Una variante indulgente de café donde se agrega nata y canela para un sabor rico y reconfortante.",
+    "recipe": "1 shot de espresso + nata + canela molida + leche.",
+    "id": "c1558c96-930d-4ae1-8468-deee35fddd18"
+  },
+  {
+    "name": "Café con Leche de Avena y Miel",
+    "description": "Una combinación vegana y dulce de café donde se utiliza leche de avena y miel para un sabor suave y reconfortante.",
+    "recipe": "1 shot de espresso + leche de avena + miel.",
+    "id": "cb886bfb-8c1e-48f4-8983-ee9148bb174b"
+  },
+  {
+    "name": "Café con Sirope de Menta y Chocolate",
+    "description": "Una variante refrescante y indulgente de café donde se agrega sirope de menta y chocolate para un sabor rico y aromático.",
+    "recipe": "1 shot de espresso + sirope de menta + sirope de chocolate + leche.",
+    "id": "213347e5-9793-45fa-ae2a-dde1df8f31a2"
+  },
+  {
+    "name": "Café con Sirope de Vainilla y Almendra",
+    "description": "Una variante dulce y aromática de café donde se agrega sirope de vainilla y almendra para un sabor suave y reconfortante.",
+    "recipe": "1 shot de espresso + sirope de vainilla + sirope de almendra + leche.",
+    "id": "2734c60b-d100-4c0c-b840-4f284fdf8a54"
+  },
+  {
+    "name": "Café con Sirope de Vainilla y Caramelo",
+    "description": "Una variante dulce y aromática de café donde se agrega sirope de vainilla y caramelo para un sabor rico y reconfortante.",
+    "recipe": "1 shot de espresso + sirope de vainilla + sirope de caramelo + leche.",
+    "id": "fe658b3d-68be-4bad-b354-937849724402"
+  },
+  {
+    "name": "Café con Canela y Leche de Soja",
+    "description": "Una combinación aromática y vegana de café donde se agrega canela y leche de soja para un sabor suave y reconfortante.",
+    "recipe": "1 shot de espresso + canela molida + leche de soja.",
+    "id": "1a6b3c4b-91a3-47eb-8a18-e15f3e0bcd73"
+  },
+  {
+    "name": "Café con Chocolate y Crema de Coco",
+    "description": "Una variante tropical e indulgente de café donde se agrega chocolate y crema de coco para un sabor rico y exótico.",
+    "recipe": "1 shot de espresso + chocolate caliente + crema de coco + leche.",
+    "id": "8ff69f32-57de-4540-a29a-e7206f69ad6a"
+  },
+  {
+    "name": "Café con Esencia de Canela y Vainilla",
+    "description": "Una combinación aromática de café donde se agrega esencia de canela y vainilla para un sabor suave y reconfortante.",
+    "recipe": "1 shot de espresso + esencia de canela + esencia de vainilla + leche.",
+    "id": "4c236c55-31b1-4026-93f1-c2fad437ef9c"
+  },
+  {
+    "name": "Café con Nata y Sirope de Avellana",
+    "description": "Una variante indulgente de café donde se agrega nata y sirope de avellana para un sabor rico y reconfortante.",
+    "recipe": "1 shot de espresso + nata + sirope de avellana + leche.",
+    "id": "eb20fb52-5833-4be2-b922-31c2909904b0"
+  },
+  {
+    "name": "Café con Sirope de Chocolate y Almendra",
+    "description": "Una variante dulce y aromática de café donde se agrega sirope de chocolate y almendra para un sabor rico y reconfortante.",
+    "recipe": "1 shot de espresso + sirope de chocolate + sirope de almendra + leche.",
+    "id": "8d1676c6-efe1-4354-a9f2-ad6a32cdd68f"
+  },
+  {
+    "name": "Café con Licor de Cacao y Nata",
+    "description": "Una variante indulgente de café donde se agrega licor de cacao y nata para un sabor rico y reconfortante.",
+    "recipe": "1 shot de espresso + licor de cacao + nata + leche.",
+    "id": "f3c0271a-78dd-4318-aadf-5849a9d112e8"
+  },
+  {
+    "name": "Café con Chocolate y Esencia de Naranja",
+    "description": "Una combinación indulgente y aromática de café donde se agrega chocolate y esencia de naranja para un sabor único y reconfortante.",
+    "recipe": "1 shot de espresso + chocolate caliente + esencia de naranja + leche.",
+    "id": "fa7b6d39-44ae-4b7e-aed4-02f450714f30"
+  }
+]
