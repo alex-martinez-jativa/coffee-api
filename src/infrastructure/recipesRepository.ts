@@ -2,7 +2,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { Recipe } from '../domain/Recipe';
 
-const RECIPES_FILE_PATH = path.join('data', 'coffee-recipes-en.json');
+const RECIPES_FILE_PATH = path.join('data', 'coffee-recipes-es.json');
 
 export class RecipeRepository {
     static async getAll(): Promise<Recipe[]> {
