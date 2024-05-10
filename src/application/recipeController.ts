@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import { RecipeRepository } from '../infrastructure/recipesRepository';
 import { ApiResponse } from '../interface/apiResponse';
+import { PaginationData } from '../interface/paginationData';
 
 export class RecipeController {
     static async getAll(req: Request, res: Response): Promise<void> {
@@ -12,17 +13,15 @@ export class RecipeController {
           
           const recipes = await RecipeRepository.getAll();
           
-          const totalRecipes = recipes.length;
-          const totalPages = Math.ceil(totalRecipes / limit);
-          
-          const nextPage = page < totalPages ? page + 1 : null;
-          const prevPage = page > 1 ? page - 1 : null;
+          const pagination = new PaginationData(page, limit, recipes);
 
-          const paginatedRecipes = recipes
-            .slice((page - 1) * limit, page * limit)
-            .map((recipe) => recipe)
-
-          const response = new ApiResponse(paginatedRecipes, page, totalRecipes, nextPage, prevPage)
+          const response = new ApiResponse(
+            pagination.getPaginationData(),
+            pagination.currentPage, 
+            pagination.getTotalRecipes(), 
+            pagination.getNextPage(), 
+            pagination.getPrevPage()
+          )
 
           res.status(200).json(response.getApiResponse())
           
