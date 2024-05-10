@@ -15,10 +15,10 @@ export class RecipeRepository {
         }
     }
 
-    async getRandom(): Promise<Recipe> {
+    async getRandom(): Promise<Recipe[]> {
         const jsonData = await fs.readFile(RECIPES_FILE_PATH, 'utf-8');
         const recipesData = JSON.parse(jsonData);
         const index = Math.floor(Math.random() * recipesData.length);
-        return recipesData[index];
+        return [recipesData[index]];
     }
 }

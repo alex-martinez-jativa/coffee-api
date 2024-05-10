@@ -30,7 +30,7 @@ export class RecipeController {
           pagination.getPrevPage()
         )
 
-        res.status(200).json(response.getApiResponse())
+        res.status(200).json(response.getApiPaginationResponse())
         
       } catch (error) {
         res.status(500).json({ error: 'Failed to fetch data' });
@@ -38,8 +38,8 @@ export class RecipeController {
   }
 
   async getRandom(req: Request, res: Response): Promise<void> {
-    const response = await this.recipeRepository.getRandom();
-
-    res.status(200).json(response);
+    const recipe = await this.recipeRepository.getRandom();
+    const response = new ApiResponse(recipe)
+    res.status(200).json(response.getApiResponse());
   }
 }

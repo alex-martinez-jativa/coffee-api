@@ -1,17 +1,19 @@
 type PageIndicator = number | null;
+type DataType<T> = T[] | T;
 
 interface IApiResponse<T> {
-  data: T[];
-  page: number;
-  totalCount: number;
-  nextPage:  PageIndicator;
-  prevPage: PageIndicator;
+  data: DataType<T>;
+  page?: number;
+  totalCount?: number;
+  nextPage?:  PageIndicator;
+  prevPage?: PageIndicator;
 }
 
 export class ApiResponse<T> {
   private apiResponse: IApiResponse<T>;
 
-  constructor(data: T[], page: number, totalCount: number, nextPage: PageIndicator, prevPage: PageIndicator) {
+  constructor(data: DataType<T>, page?: number, totalCount?: number, nextPage?: PageIndicator, prevPage?: PageIndicator) {
+    
     this.apiResponse = {
       data: data,
       page: page,
@@ -21,7 +23,14 @@ export class ApiResponse<T> {
     };
   }
 
-  getApiResponse(): IApiResponse<T> {
+  getApiPaginationResponse(): IApiResponse<T> {
     return this.apiResponse;
   }
+
+  getApiResponse(): IApiResponse<T> {
+    return {
+      data: this.apiResponse.data
+    }
+  }
+
 }
