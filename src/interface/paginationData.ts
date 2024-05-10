@@ -1,7 +1,7 @@
 export class PaginationData {
-  currentPage: number;
-  limit: number;
-  recipes: any;
+  private currentPage: number;
+  private limit: number;
+  private recipes: any;
   constructor(page: number, limit: number, recipes: any){
     this.currentPage = page;
     this.limit = limit;
@@ -29,5 +29,9 @@ export class PaginationData {
 
   getTotalRecipes() {
     return this.recipes.length;
+  }
+
+  getCurrentPage() {
+    return this.currentPage;
   }
 }

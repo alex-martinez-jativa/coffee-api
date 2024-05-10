@@ -5,7 +5,7 @@ import { Recipe } from '../domain/Recipe';
 const RECIPES_FILE_PATH = path.join('data', 'coffee-recipes-es.json');
 
 export class RecipeRepository {
-    static async getAll(): Promise<Recipe[]> {
+    async getAll(): Promise<Recipe[]> {
         try {
             const jsonData = await fs.readFile(RECIPES_FILE_PATH, 'utf-8');
             const recipesData = JSON.parse(jsonData);
