@@ -36,4 +36,10 @@ export class RecipeController {
         res.status(500).json({ error: 'Failed to fetch data' });
       }
   }
+
+  async getRandom(req: Request, res: Response): Promise<void> {
+    const response = await this.recipeRepository.getRandom();
+
+    res.status(200).json(response);
+  }
 }

@@ -14,4 +14,11 @@ export class RecipeRepository {
           throw new Error('Failed to fetch data')
         }
     }
+
+    async getRandom(): Promise<Recipe> {
+        const jsonData = await fs.readFile(RECIPES_FILE_PATH, 'utf-8');
+        const recipesData = JSON.parse(jsonData);
+        const index = Math.floor(Math.random() * recipesData.length);
+        return recipesData[index];
+    }
 }

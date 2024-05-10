@@ -8,6 +8,7 @@ const recipeRepository = new RecipeRepository();
 const recipeController = new RecipeController(recipeRepository);
 
 router.get('/recipes', recipeController.getAll.bind(recipeController));
+router.get('/recipes/random', recipeController.getRandom.bind(recipeController));
 
 export {
   router
