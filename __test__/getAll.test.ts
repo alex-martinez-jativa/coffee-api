@@ -20,7 +20,7 @@ const mockRecipesData = [{
   "id": "bd665b7a-81be-4dc7-91b5-b58098d4aa1b"
 }];
 
-describe('test recipesController', () => {
+describe('test recipesController getAll', () => {
   let controller: RecipeController;
   let repository = { getAll: jest.fn() };
 
@@ -37,10 +37,10 @@ describe('test recipesController', () => {
   } as unknown as Response;
   
   beforeEach(() => {
-    controller = new RecipeController(repository);
+    controller = new RecipeController(repository as any);
   });
 
-  test('getAll()', async () => {
+  test('should return list of recipes with response data', async () => {
 
     repository.getAll.mockReturnValueOnce(mockRecipesData);
     const responseData = mockRecipesData.slice(0, -1);
