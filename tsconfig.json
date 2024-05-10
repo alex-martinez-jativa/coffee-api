@@ -1,28 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
-    "module": "Preserve",
-    "moduleResolution": "Bundler",
+    "target": "ESNext",
+    "module": "ES2022",
+    "outDir": "dist",
     "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "sourceMap": true,
-    "outDir": "./dist/",
     "strict": true,
-    "baseUrl": "./",   
-    "lib": ["ES2022"],
-    "declarationMap": true,   
-    "composite": true,
-    "importsNotUsedAsValues": "remove",   
-    "isolatedModules": true,
+    "skipLibCheck": true
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "dist"],
-  "ts-node": {
-    "esm": true,
-    "compiler": "typescript",
-    "experimentalSpecifierResolution": "node" ,
-    "transpileOnly": true,
-    "files": true,
-    "experimentalResolver": true
-  }
+  "exclude": ["node_modules", "./*.ts", "__test__"]
 }
