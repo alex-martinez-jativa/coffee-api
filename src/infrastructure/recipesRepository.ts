@@ -11,14 +11,28 @@ export class RecipeRepository {
             const recipesData = JSON.parse(jsonData);
             return recipesData.map((recipeData: Recipe) => new Recipe(recipeData));
         } catch (error) {
-          throw new Error('Failed to fetch data')
+          throw new Error('Failed to fetch data');
         }
     }
 
     async getRandom(): Promise<Recipe[]> {
-        const jsonData = await fs.readFile(RECIPES_FILE_PATH, 'utf-8');
-        const recipesData = JSON.parse(jsonData);
-        const index = Math.floor(Math.random() * recipesData.length);
-        return [recipesData[index]];
+        try {
+            const recipesData = await this.getAll();
+            const index = Math.floor(Math.random() * recipesData.length);
+            return [recipesData[index]];
+        } catch (error) {
+            throw new Error('Failed to fetch data');
+        }
+    }
+
+    async findByIngredient(ingredient: string): Promise<Recipe[]> {
+        try {
+            const recipes = await this.getAll();
+            const regex = new RegExp(`\\b${ingredient}\\b`, 'i');
+            const filteredRecipes = recipes.filter((el) => regex.test(el.recipe.toLocaleLowerCase()));
+            return filteredRecipes;
+        } catch(error) {
+            throw new Error('Failed to fetch data');
+        }
     }
 }

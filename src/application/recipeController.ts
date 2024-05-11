@@ -38,8 +38,33 @@ export class RecipeController {
   }
 
   async getRandom(req: Request, res: Response): Promise<void> {
-    const recipe = await this.recipeRepository.getRandom();
-    const response = new ApiResponse(recipe)
-    res.status(200).json(response.getApiResponse());
+    try {
+      const recipe = await this.recipeRepository.getRandom();
+      const response = new ApiResponse(recipe)
+      res.status(200).json(response.getApiResponse());
+    } catch (error) {
+      res.status(500).json({ error: 'Failed to fetch data' });
+    }
+  }
+
+  async findByIngredient(req: Request, res: Response): Promise<void> {
+    const { params: { ingredient }  } = req;
+
+    if (!ingredient) {
+      res.status(500).json({ error: 'missed ingredient param' });
+      return;
+    }
+
+    try {
+      const _ingredient = ingredient.trim().toLocaleLowerCase();
+      const recipes = await this.recipeRepository.findByIngredient(_ingredient);
+      if (recipes.length === 0) {
+        res.json({message: 'no match to ingredient'})
+      } else {
+        res.status(200).json(recipes);
+      }
+    } catch (error) {
+      res.status(500).json({ error: 'Failed to fetch data' });
+    }
   }
 }

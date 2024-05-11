@@ -9,6 +9,7 @@ const recipeController = new RecipeController(recipeRepository);
 
 router.get('/recipes', recipeController.getAll.bind(recipeController));
 router.get('/recipes/random', recipeController.getRandom.bind(recipeController));
+router.get('/recipes/ingredient/:ingredient', recipeController.findByIngredient.bind(recipeController));
 
 export {
   router
