@@ -1,10 +1,12 @@
 import express, { Express } from 'express';
 import { router } from './routes';
 import cors from 'cors';
+import Logger from '../infrastructure/logger';
 
 export class App {
   private readonly app: Express;
   private readonly port: string;
+  private readonly logger: Logger;
   constructor() {
     this.app = express();
     this.app.use(express.json());
@@ -12,12 +14,17 @@ export class App {
     this.port = process.env.PORT ?? '8000';
     this.app.use(cors({
       methods: ['GET'],
-  }));
+    }));
+    this.logger = new Logger(process.env.NODE_ENV || 'development');
   }
 
   start() {
     this.app.listen(this.port, () => {
-      console.log(`Server is running on port ${this.port}`);
+      this.logger.info(`server 🚀 on port: ${process.env.PORT}`)
     });
+  }
+
+  stop() {
+    this.logger.info('server abruptly stopped 🚨');
   }
 }
