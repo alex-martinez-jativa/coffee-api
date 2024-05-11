@@ -26,21 +26,12 @@ const mockResponseData = {
 describe('recipes controller findByIngredient', () => {
   let controller: RecipeController;
   let repository: any;
-  const ingredient = 'steamed';
 
   const res = {
     status: jest.fn(() => res),
     json: jest.fn()
   } as unknown as Response;
   
-  /* beforeEach(() => {
-    repository = {
-      findByIngredient: jest.fn().mockResolvedValue(mockResponseData),
-      getAll: jest.fn().mockResolvedValue(mockRecipesData)
-    };
-    controller = new RecipeController(repository as any);
-  }); */
-
   test('should return match ingredient recipe', async () => {
 
     repository = {
@@ -49,6 +40,8 @@ describe('recipes controller findByIngredient', () => {
     };
     controller = new RecipeController(repository as any);
 
+    const ingredient = 'steamed';
+  
     const req = {
       params: {
         ingredient: ingredient
@@ -82,4 +75,4 @@ describe('recipes controller findByIngredient', () => {
     expect(res.status).toHaveBeenCalledWith(200);
     expect(res.json).toHaveBeenCalledWith({message: 'no match to ingredient'});
   });
-})
+});
