@@ -59,7 +59,7 @@ export class RecipeController {
       const _ingredient = ingredient.trim().toLocaleLowerCase();
       const recipes = await this.recipeRepository.findByIngredient(_ingredient);
       if (recipes.length === 0) {
-        res.json({message: 'no match to ingredient'})
+        res.status(200).json({message: 'no match to ingredient'})
       } else {
         res.status(200).json(recipes);
       }
