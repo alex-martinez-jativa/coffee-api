@@ -22,7 +22,7 @@ Retrieve list of coffee recipes.
 Retrieve a random coffee recipe
 
 - query params
- - language (en/es)
+  - language (en/es)
 
 ### GET `/recipes/ingredient/:ingredient`
 find recipe by ingredient
@@ -31,3 +31,11 @@ find recipe by ingredient
   - language: (en/es)
 - path params
   - ingredient
+
+## Steps to run de application
+
+1. git clone: https://github.com/alex-martinez-jativa/coffee-api.git
+2. npm install
+3. npm run dev (development environment)
+4. npm run build
+5. npm start
