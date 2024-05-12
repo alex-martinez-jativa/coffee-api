@@ -1,6 +1,6 @@
 import fs from 'fs/promises';
 import path from 'path';
-import { Recipe } from '../domain/Recipe';
+import { Recipe } from '../domain/Recipe.js';
 
 const RECIPES_FILE_PATH_EN = path.join('data', 'coffee-recipes-en.json');
 const RECIPES_FILE_PATH_ES = path.join('data', 'coffee-recipes-es.json');

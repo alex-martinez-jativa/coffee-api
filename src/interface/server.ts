@@ -1,7 +1,7 @@
 import express, { Express } from 'express';
-import { router } from './routes';
+import { router } from './routes.js';
 import cors from 'cors';
-import Logger from '../infrastructure/logger';
+import Logger from '../infrastructure/logger.js';
 
 export class App {
   private readonly app: Express;

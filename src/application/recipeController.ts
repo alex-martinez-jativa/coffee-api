@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
-import { RecipeRepository } from '../infrastructure/recipesRepository';
-import { ApiResponse } from '../interface/apiResponse';
-import { PaginationData } from '../interface/paginationData';
+import { RecipeRepository } from '../infrastructure/recipesRepository.js';
+import { ApiResponse } from '../interface/apiResponse.js';
+import { PaginationData } from '../interface/paginationData.js';
 
 export class RecipeController {
 
