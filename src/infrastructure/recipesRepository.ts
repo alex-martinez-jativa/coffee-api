@@ -2,12 +2,15 @@ import fs from 'fs/promises';
 import path from 'path';
 import { Recipe } from '../domain/Recipe';
 
-const RECIPES_FILE_PATH = path.join('data', 'coffee-recipes-es.json');
+const RECIPES_FILE_PATH_EN = path.join('data', 'coffee-recipes-en.json');
+const RECIPES_FILE_PATH_ES = path.join('data', 'coffee-recipes-es.json');
 
 export class RecipeRepository {
+    private language?: string;
     async getAll(): Promise<Recipe[]> {
         try {
-            const jsonData = await fs.readFile(RECIPES_FILE_PATH, 'utf-8');
+            const file = this.getFileByLanguage();
+            const jsonData = await fs.readFile(file, 'utf-8');
             const recipesData = JSON.parse(jsonData);
             return recipesData.map((recipeData: Recipe) => new Recipe(recipeData));
         } catch (error) {
@@ -33,6 +36,18 @@ export class RecipeRepository {
             return filteredRecipes;
         } catch(error) {
             throw new Error('Failed to fetch data');
+        }
+    }
+
+    setLanguage(lang: string = 'en') {
+        this.language = lang;
+    }
+
+    getFileByLanguage() {
+        if (this.language === 'es') {
+            return RECIPES_FILE_PATH_ES;
+        } else {
+            return RECIPES_FILE_PATH_EN;
         }
     }
 }

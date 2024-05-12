@@ -16,8 +16,10 @@ export class RecipeController {
         
         const page = parseInt(req.query.page as string) || 1;
         let limit = parseInt(req.query.limit as string) || 10;
+        const lang = req.query.lang?.toString();
         limit = Math.min(limit, 50);
         
+        this.recipeRepository.setLanguage(lang);
         const recipes = await this.recipeRepository.getAll();
         
         const pagination = new PaginationData(page, limit, recipes);
