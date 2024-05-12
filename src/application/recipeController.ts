@@ -16,10 +16,11 @@ export class RecipeController {
         
         const page = parseInt(req.query.page as string) || 1;
         let limit = parseInt(req.query.limit as string) || 10;
-        const lang = req.query.lang?.toString();
         limit = Math.min(limit, 50);
         
+        const lang = req.query.lang?.toString();
         this.recipeRepository.setLanguage(lang);
+
         const recipes = await this.recipeRepository.getAll();
         
         const pagination = new PaginationData(page, limit, recipes);
@@ -41,8 +42,12 @@ export class RecipeController {
 
   async getRandom(req: Request, res: Response): Promise<void> {
     try {
+      const lang = req.query.lang?.toString();
+      this.recipeRepository.setLanguage(lang);
+
       const recipe = await this.recipeRepository.getRandom();
-      const response = new ApiResponse(recipe)
+      const response = new ApiResponse(recipe);
+
       res.status(200).json(response.getApiResponse());
     } catch (error) {
       res.status(500).json({ error: 'Failed to fetch data' });
@@ -58,7 +63,9 @@ export class RecipeController {
     }
 
     try {
-      const _ingredient = ingredient.trim().toLocaleLowerCase();
+      const lang = req.query.lang?.toString();
+      this.recipeRepository.setLanguage(lang);
+      const _ingredient = ingredient.trim().toLowerCase();
       const recipes = await this.recipeRepository.findByIngredient(_ingredient);
       if (recipes.length === 0) {
         res.status(200).json({message: 'no match to ingredient'})
