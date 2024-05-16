@@ -10,8 +10,11 @@
   "files": [
     "./dist/"
   ],
+  "engines": {
+    "node": "20.12.2"
+  },
   "scripts": {
-    "start": "node --env-file=.env dist/index.js",
+    "start": "npm run build && node --env-file=.env dist/index.js",
     "build": "tsc",
     "dev": "node --env-file=.env --no-warnings --enable-source-maps --loader ts-node/esm src/index.ts",
     "debug": "node --env-file=.env --inspect-brk --no-warnings --enable-source-maps --loader ts-node/esm src/index.ts",
