@@ -1,7 +1,7 @@
 import express, { Express } from 'express';
-import { router } from './routes.js';
+import { recipeRouter } from './recipes/interface/recipeRoutes.js';
 import cors from 'cors';
-import Logger from '../infrastructure/logger.js';
+import Logger from './lib/logger.js';
 
 export class App {
   private readonly app: Express;
@@ -10,7 +10,7 @@ export class App {
   constructor() {
     this.app = express();
     this.app.use(express.json());
-    this.app.use('/api', router)
+    this.app.use('/api', recipeRouter)
     this.port = process.env.PORT ?? '8000';
     this.app.use(cors({
       methods: ['GET'],
@@ -21,6 +21,7 @@ export class App {
   start() {
     this.app.listen(this.port, () => {
       this.logger.info(`server 🚀 on port: ${process.env.PORT}`)
+      this.logger.info(`http://localhost:${process.env.PORT}`)
     });
   }
 

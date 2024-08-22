@@ -1,4 +1,4 @@
-import { App } from "./interface/server.js";
+import { App } from "./server.js";
 
 const app = new App()
 
